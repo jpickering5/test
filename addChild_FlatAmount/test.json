@@ -1,0 +1,248 @@
+{
+  "case":"Accidental Death and Dismemberment for Child: Additional Flat Amount",
+  "global":
+  {
+    "framework":"2.00",
+    "groupDomain": "auto",
+    "domain":"maestroedgy.com",
+    "user":"bmembersemimonth",
+    "password":"P@ssword123!"
+  },
+  "templates":
+  [
+    {
+      "name":"addpe",
+      "tiers":
+      [
+        {
+          "name":"eo",
+          "settings":"",
+          "plans":
+          [
+            {
+              "name":"AD&D PE 1000",
+              "productId":"1333",
+              "description":"AD&D PE; RB 1000; flat; inc multiplier no round;",
+              "planSelection":
+              {
+                "skipCompare":true,
+                "youPay":"$56.32",
+                "miniCart":
+                {
+                },
+                "addToCart":
+                {
+                  "beneficiary":true,
+                  "altBeneficiary": true
+                }
+              },
+              "shoppingCart":
+              {
+              },
+              "confirmationOfBenefits":
+              {
+              },
+              "dashboard":
+              {
+                "classification": "Accidental Death and Dismemberment"
+              },
+              "coverages":
+              {
+                "productCategoryId": "187",
+                "groupId": "523",
+                "member":"bmember semimonth"
+              },
+              "edi":
+              {
+                "member":"bmember semimonth",
+                "groupId":"523"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"addspouse",
+      "tiers":
+      [
+        {
+          "name":"eo",
+          "settings":"",
+          "plans":
+          [
+            {
+              "name":"AD&D Spouse 1000",
+              "productId":"1357",
+              "description":"AD&D Spouse; RB 1000; % Primary; Inc Nearest 1000; Census Spouse",
+              "planSelection":
+              {
+                "skipCompare":true,
+                "approvedBenefitAmount":"$25,000.00",
+                "youPay":"$28.16",
+                "preTax":"Pre-tax",
+                "miniCart":
+                {
+                  "youPay":"$28.16"
+                },
+                "addToCart":
+                {
+
+                }
+              },
+              "shoppingCart":
+              {
+                "classification":"Accidental Death & Dismemberment- Spouse",
+                "dependents":"Spouse (Spouse)",
+                "approvedBenefitAmount":"25,000.00",
+                "youPay":"$28.16",
+                "tax":"Pre-tax",
+                "youPayTotal":"$112.64"
+              },
+              "confirmationOfBenefits":
+              {
+                "classification":"Accidental Death & Dismemberment- Spouse",
+                "approvedBenefitAmount":"$25,000.00",
+                "dependents":"Spouse (Spouse)",
+                "totalPremium":"$28.16",
+                "youPay":"$28.16",
+                "tax":"Pre-tax",
+                "totalPremiumTotal":"$112.64",
+                "paidEmployerTotal":"$0.00",
+                "youPayTotal":"$112.64"
+              },
+              "dashboard":
+              {
+                "classification":"Accidental Death & Dismemberment- Spouse",
+                "approvedBenefitAmount":"$25,000.00",
+                "altYouPay":"$28.16",
+                "tax":"Pre-tax"
+              },
+              "coverages":
+              {
+                "productCategoryId": "187",
+                "groupId":"523",
+                "member": "bmember semimonth"
+              },
+              "edi":
+              {
+                "groupId":"523",
+                "member": "bmember semimonth"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"addchild",
+      "tiers":
+      [
+        {
+          "name":"eo",
+          "settings":"",
+          "plans":
+          [
+            {
+              "name":"AD&D Child 1000",
+              "productId":"1361",
+              "description":"AD&D Child; RB 1000; % primary; inc nearest 1000",
+              "planSelection":
+              {
+                "skipCompare":true,
+                "approvedBenefitAmount":"$25,000.00",
+                "youPay":"$28.16",
+                "preTax":"Pre-tax",
+                "miniCart":
+                {
+                  "youPay":"$28.16"
+                },
+                "addToCart":
+                {
+                }
+              },
+              "shoppingCart":
+              {
+                "classification":"Accidental Death & Dismemberment-Children",
+                "dependents":"Child (Child)",
+                "approvedBenefitAmount":"$25,000.00",
+                "youPay":"$28.16",
+                "tax":"Pre-tax",
+                "youPayTotal":"$112.64"
+              },
+              "confirmationOfBenefits":
+              {
+                "classification":"Accidental Death & Dismemberment-Children",
+                "approvedBenefitAmount":"$25,000.00",
+                "dependents":"Child (Child)",
+                "totalPremium":"$28.16",
+                "youPay":"$28.16",
+                "tax":"Pre-tax",
+                "totalPremiumTotal":"$112.64",
+                "paidEmployerTotal":"$0.00",
+                "youPayTotal":"$112.64"
+              },
+              "dashboard":
+              {
+                "classification":"Accidental Death & Dismemberment-Children",
+                "dependents":"Child (Child)",
+                "approvedBenefitAmount":"$25,000.00",
+                "altYouPay":"$28.16"
+              },
+              "coverages":
+              {
+                "productCategoryId": "189",
+                "groupId":"523",
+                "member": "bmember semimonth",
+                "rate": "8809",
+                "tier": "CHO",
+                "status": "Pending, waiting for approval",
+                "definedContribution": "0.00",
+                "annualContribution": "0.00",
+                "premium": "28.16",
+                "annualPremiumPretax": "675.72",
+                "annualPremiumPosttax": "0.00",
+                "premiumPayCycle": "semimonthly",
+                "payPeriodCount": "24",
+                "billed": "3.25252",
+                "admin": "0.25252",
+                "units": "25.00",
+                "period": "Monthly",
+                "source": "Online Enrollment",
+                "benefitAmount": "25000.00",
+                "planProvider": "1361",
+                "employerSponsored": false,
+                "definedBenefit": "False",
+                "faceValue": "25000.00",
+                "benefitReduced": false,
+                "ratePerson": "Child Child",
+                "memberId": "23420"
+              },
+              "edi":
+              {
+                "member": "bmember semimonth",
+                "groupId":"523",
+                "payCycle": "24",
+                "employerSponsored":false,
+                "totalPremium":"28.16",
+                "paidEmployer": "0.00",
+                "annualContribution": "0.00",
+                "definedBenefit": "False",
+                "youPay": "28.16",
+                "billed":"3.25252",
+                "admin":"0.25252",
+                "rate":"8809",
+                "tier":"CHO",
+                "tax":"Pre-tax",
+                "benefitAmount": "25000.00",
+                "approvedBenefitAmount": "25000.00",
+                "annualPremiumPretax": "675.72",
+                "annualPremiumPosttax": "0.00"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
