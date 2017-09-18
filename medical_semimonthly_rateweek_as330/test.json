@@ -1,0 +1,147 @@
+{
+  "case":"Medical Defined Benefit Payroll Semi-Monthly Rate Week",
+  "jira": "AS-330",
+  "global":
+  {
+    "framework":"2.00",
+    "groupDomain": "auto",
+    "domain":"maestroedgy.com",
+    "user":"medicalsemi-monthly1",
+    "password":"P@ssword123!",
+    "medicare": true,
+    "familyMedicalInsurance": true
+  },
+  "templates":
+  [
+    {
+      "name":"Medical",
+      "tiers":
+      [
+        {
+          "name":"eo",
+          "plans":
+          [
+            {
+              "name":"Auto Medical Rate Unit Weekly",
+              "productId":"224",
+              "planSelection":
+              {
+                "youPay":"$34.67",
+                "postTax": "Post-tax",
+                "detail": {
+                  "annualYouPay": "$832.00",
+                  "oopMaxInNetwork": "$20,000.00",
+                  "oopMaxOutNetwork": "$30,000.00",
+                  "oopTotalInNetwork": "$20,832.00",
+                  "oopTotalOutNetwork": "$30,832.00"
+                },
+                "miniCart":
+                {
+                  "youPay": "$34.67",
+                  "youPayTotal": "$34.67"
+                },
+                "addToCart":
+                {
+                  "expanded": true
+                }
+              },
+              "shoppingCart":
+              {
+                "youPay": "$34.67",
+                "youPayTotal": "$34.67",
+                "tax": "Post-tax",
+                "annualYouPay": "$832.00",
+                "oopMaxInNetwork": "$20,000.00",
+                "oopMaxOutNetwork": "$30,000.00",
+                "oopTotalInNetwork": "$20,832.00",
+                "oopTotalOutNetwork": "$30,832.00"
+              },
+              "confirmationOfBenefits":
+              {
+                "classification": "Medical",
+                "dependents": "medical (This is you)",
+                "totalPremium": "$39.00",
+                "paidEmployer": "$4.33",
+                "youPay": "$34.67",
+                "tax": "Post-tax",
+                "totalPremiumTotal": "$39.00",
+                "paidEmployerTotal": "$4.33",
+                "youPayTotal": "$34.67"
+              },
+              "dashboard":
+              {
+                "classification": "Medical",
+                "youPay": "$34.67",
+                "tax": "Post-tax",
+                "detail": {
+                  "youPay": "$34.67",
+                  "tax": "Pre-tax",
+                  "annualYouPay": "$832.00",
+                  "oopMaxInNetwork": "$20,000.00",
+                  "oopMaxOutNetwork": "$30,000.00",
+                  "oopTotalInNetwork": "$20,832.00",
+                  "oopTotalOutNetwork": "$30,832.00"
+                }
+              },
+              "coverages":
+              {
+                "productCategoryId": "71",
+                "groupId": "523",
+                "member":"medical semi-monthly1",
+                "status": "Pending, waiting for approval",
+                "rate": "1889",
+                "tier": "EO",
+                "definedContribution": "4.33",
+                "annualContribution": "104.00",
+                "premium": "39.00",
+                "annualPremiumPretax": "0.00",
+                "annualPremiumPosttax": "936.00",
+                "premiumPayCycle": "semimonthly",
+                "payPeriodCount": "24",
+                "billed": "18.00000",
+                "admin": "10.00000",
+                "units": "1.00",
+                "period": "Monthly",
+                "planProvider": "224",
+                "employerSponsored": false,
+                "definedBenefit": true,
+                "faceValue": "",
+                "benefitPeriods": "",
+                "ratePerson": "medical semi-monthly1",
+                "memberId": "354095",
+                "issuedAge": "28"
+              },
+              "edi":
+              {
+                "member":"medical semi-monthly1",
+                "category": "Medical",
+                "categoryId": "71",
+                "source": "Online Enrollment",
+                "coverageType": "medical",
+                "tentative": "false",
+                "groupId":"523",
+                "employerSponsored": false,
+                "definedBenefit": true,
+                "tier": "EO",
+                "tax": "Post-tax",
+                "totalPremium": "39.00",
+                "paidEmployer": "4.33",
+                "youPay": "34.67",
+                "units": "1.00",
+                "benefitAmount": "None",
+                "annualPremiumPretax": "0.00",
+                "annualPremiumPosttax": "936.00",
+                "annualContribution": "104.00",
+                "billed": "18.00000",
+                "admin": "10.00000",
+                "rate": "1889",
+                "payCycle": "24",
+                "planProvider": "224"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
