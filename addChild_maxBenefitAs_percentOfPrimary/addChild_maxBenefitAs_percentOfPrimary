@@ -1,0 +1,560 @@
+[15:21:39] I/launcher - Running 1 instances of WebDriver
+[15:21:39] I/hosted - Using the selenium server at http://localhost:4443/wd/hub
+Started
+[**Action] Setting Ignore Synchronization to true
+[**Section] MEDGE Controller invoked...
+[**C] Accidental Death and Dismemberment for Child: Calculated Benefit with Increment Rounding Nearest 1000
+[**Action] Setting Ignore Synchronization to true
+[**Information] --- Framework 2.00 Maestro Healthcare Inc. ---
+[**Information] Test was executed on 9/2/2017 at 15:21
+[**Information] 
+
+
+
+^^^^^^^^^ Executing:  ^^^^^^^^^^
+
+
+
+
+[**Information] Application Under Test: https://automaestroedgy.com
+[**Information] User: bmembersemimonth5
+[**Information] Template: addpe
+[**Information] Tier: eo
+[**Information] Plan: AD&D PE 1000
+[**Information] Template: addspouse
+[**Information] Tier: eo
+[**Information] Plan: AD&D Spouse 1000
+[**Information] Template: addchild
+[**Information] Tier: eo
+[**Information] Plan: AD&D Child 1000
+[**Action] Setting Ignore Synchronization to true
+[**Section] SETUP
+[**Action] Setting Ignore Synchronization to true
+[**Action] Logging In as bmembersemimonth5
+[**Log] ---- Global Settings Detected -----
+[**Log] Switching to Test Specified Group Domain: auto
+[**Log] ---- Global Settings Detected -----
+[**Log] Switching to Test Specified Domain: maestroedgy.com
+[**Log] *** URL for Login is: https://auto.maestroedgy.com/#
+[**Action] deleting cookies...
+[**Action] Requesting URL: https://auto.maestroedgy.com/#/auth/login
+[**Action] Checking if element is visible Enrollment Login Page
+[**V] Enrollment Login Page = true
+[**I] addChild_maxBenefitAs_percentOfPrimary.login
+[**Action] typing bmembersemimonth5 Enrollment Username: bmembersemimonth5
+[**Action] typing P@ssword123! Enrollment Password: P@ssword123!
+[**Action]  [Click On] Enrollment Login Button
+[**Action] Getting Console Logs
+[**Information] console log: []
+[**Section] RESET CART
+[**Action]  [Click On]  Dashboard - My Profile Link
+[**Action] Setting Ignore Synchronization to true
+[**Action] Resetting Cart to re-start enrollment from scratch (version 2 via adding dependent)
+[**I] addChild_maxBenefitAs_percentOfPrimary.personalInformation
+[**Action]  [Click On] Personal Information Add Dependent Link
+[**Action]  [Click On] Personal Information Dependencies Light Box Yes Button
+[**Action]  [Click On] Add Dependents: Save and See Plan Options button
+[**Section] Plan Selection
+[**Entity] Template: addpe
+[**Action]  [Click On] About Page Continue Button
+[**Entity] Tier: eo
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Information] Plans for Tier eo
+[**Entity] Plan: AD&D PE 1000
+[**Entity] Working with Plan AD&D PE 1000
+[**I] addChild_maxBenefitAs_percentOfPrimary.planCard
+[**Entity] Plan: AD&D PE 1000
+[**Action] Verifying Element Is Displayed [tier: eo] [AD&D PE 1000]Plan Selection: Plan is Visible: AD&D PE 1000 locator: //p[contains(text(),'AD&D PE 1000')]
+[**V]  [tier: eo] [AD&D PE 1000]Plan Selection: Plan is Visible: AD&D PE 1000  //p[contains(text(),'AD&D PE 1000')] Expected: [true] Actual: [true] = passed
+[**Section] Plan Card Details
+[**Action] Multi Click number of times: 1 Click the Down Arrow to Reduce the Benefit Amount by number of increments specified in plan.planSelection.downStep
+[**VV]  [tier: eo] [AD&D PE 1000]Plan Selection You Pay locator: //p[contains(.,'AD&D PE 1000')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2] //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2], planSelection.youPay - //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2],$56.20,$56.20,passed
+[**VV]  [tier: eo] [AD&D PE 1000]Plan Selection Pre-Approved Benefit Amount locator: //p[contains(.,'AD&D PE 1000')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input  //p[contains(.,'<plan.name>')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input, planSelection.approvedBenefitAmount,$49,900.00,$49,900.00,passed
+[**Warning] [tier: eo] [AD&D PE 1000] does not have any detail verifications so none were made
+[**Action] Plan Selected is: AD&D PE 1000
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Information] Adding to cart with a beneficiary: AD&D PE 1000
+[**Action] Checking if element is visible Plan is Displayed in Plan Selection. //p[contains(text(),'AD&D PE 1000')]
+[**V] Plan is Displayed in Plan Selection. //p[contains(text(),'AD&D PE 1000')] = true
+[**Action] Click Displayed Click to Expand a Benefit AD&D PE 1000 locator //p[contains(text(),'AD&D PE 1000')]/../../../*//span[contains(text(),'Explore Details')]
+[**Log] Click to Expand a Benefit AD&D PE 1000 locator //p[contains(text(),'AD&D PE 1000')]/../../../*//span[contains(text(),'Explore Details')] = true
+[**Action] typing primary Typing primary into beneficiary name, xpath is //p[contains(.,'AD&D PE 1000')]/../../../*//input[@id='name']
+[**Action] typing 100	 Enter 100 in Life Beneficiary Percent field //p[contains(.,'AD&D PE 1000')]/../../../*//input[@name='percentage']
+[**Action] Click and Wait 10 seconds Wait 10 seconds then click Add to Cart on Plan AD&D PE 1000 xpath is //p[contains(text(),'AD&D PE 1000')]/../../..//shopping-life-beneficiaries/../*//button[@name='addToCart']
+[**Entity] Template: addspouse
+[**Action]  [Click On] About Page Continue Button
+[**Entity] Tier: eo
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Information] Plans for Tier eo
+[**Entity] Plan: AD&D Spouse 1000
+[**Entity] Working with Plan AD&D Spouse 1000
+[**I] addChild_maxBenefitAs_percentOfPrimary.planCard
+[**Entity] Plan: AD&D Spouse 1000
+[**Action] Verifying Element Is Displayed [tier: eo] [AD&D Spouse 1000]Plan Selection: Plan is Visible: AD&D Spouse 1000 locator: //p[contains(text(),'AD&D Spouse 1000')]
+[**V]  [tier: eo] [AD&D Spouse 1000]Plan Selection: Plan is Visible: AD&D Spouse 1000  //p[contains(text(),'AD&D Spouse 1000')] Expected: [true] Actual: [true] = passed
+[**Section] Plan Card Details
+[**VV]  [tier: eo] [AD&D Spouse 1000]Plan Selection You Pay locator: //p[contains(.,'AD&D Spouse 1000')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2] //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2], planSelection.youPay - //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2],$28.16,$28.16,passed
+[**VV]  [tier: eo] [AD&D Spouse 1000]Plan Selection Type is Pre Tax locator: //p[contains(.,'AD&D Spouse 1000')]/../../*//span[contains(.,'Pre-tax')] //p[contains(.,'<plan.name>')]/../../*//span[contains(.,'Pre-tax')], planSelection.preTax - //p[contains(.,'<plan.name>')]/../../*//span[contains(.,'Pre-tax')],Pre-tax,Pre-tax,passed
+[**VV]  [tier: eo] [AD&D Spouse 1000]Plan Selection Pre-Approved Benefit Amount locator: //p[contains(.,'AD&D Spouse 1000')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input  //p[contains(.,'<plan.name>')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input, planSelection.approvedBenefitAmount,$25,000.00,$25,000.00,passed
+[**Warning] [tier: eo] [AD&D Spouse 1000] does not have any detail verifications so none were made
+[**Action] Plan Selected is: AD&D Spouse 1000
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Action]  [Click On] Add to Cart //p[contains(.,'AD&D Spouse 1000')]/../../*//button
+[**Action]  [Click On] Mini Cart Button
+[**I] addChild_maxBenefitAs_percentOfPrimary.miniCart
+[**VV]  AD&D Spouse 1000 Mini Cart You Pay //td[contains(text(),'AD&D Spouse 1000')]/../td[2], miniCart.youPay - //td[contains(text(),'AD&D Spouse 1000')]/../td[2],$28.16,$28.16,passed
+[**Action]  [Click On] Mini Cart Button
+[**Entity] Template: addchild
+[**Action]  [Click On] About Page Continue Button
+[**Entity] Tier: eo
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Information] Plans for Tier eo
+[**Entity] Plan: AD&D Child 1000
+[**Entity] Working with Plan AD&D Child 1000
+[**I] addChild_maxBenefitAs_percentOfPrimary.planCard
+[**Entity] Plan: AD&D Child 1000
+[**Action] Verifying Element Is Displayed [tier: eo] [AD&D Child 1000]Plan Selection: Plan is Visible: AD&D Child 1000 locator: //p[contains(text(),'AD&D Child 1000')]
+[**V]  [tier: eo] [AD&D Child 1000]Plan Selection: Plan is Visible: AD&D Child 1000  //p[contains(text(),'AD&D Child 1000')] Expected: [true] Actual: [true] = passed
+[**Section] Plan Card Details
+[**VV]  [tier: eo] [AD&D Child 1000]Plan Selection You Pay locator: //p[contains(.,'AD&D Child 1000')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2] //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2], planSelection.youPay - //p[contains(.,'<plan.name>')]/../..//div[contains(@class,'item-total')]//span[contains(.,'Premium')]/../../div[2],$28.16,$28.16,passed
+[**VV]  [tier: eo] [AD&D Child 1000]Plan Selection Type is Pre Tax locator: //p[contains(.,'AD&D Child 1000')]/../../*//span[contains(.,'Pre-tax')] //p[contains(.,'<plan.name>')]/../../*//span[contains(.,'Pre-tax')], planSelection.preTax - //p[contains(.,'<plan.name>')]/../../*//span[contains(.,'Pre-tax')],Pre-tax,Pre-tax,passed
+[**VV]  [tier: eo] [AD&D Child 1000]Plan Selection Pre-Approved Benefit Amount locator: //p[contains(.,'AD&D Child 1000')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input  //p[contains(.,'<plan.name>')]/../..//span[contains(.,'Pre-Approved Benefit Amount')]/../numeric-ticker-field/input, planSelection.approvedBenefitAmount,$25,000.00,$25,000.00,passed
+[**Warning] [tier: eo] [AD&D Child 1000] does not have any detail verifications so none were made
+[**Action] Plan Selected is: AD&D Child 1000
+[**Information] Settings: 
+[**Warning] tier.settings is required to select a tier
+[**Action]  [Click On] Add to Cart //p[contains(.,'AD&D Child 1000')]/../../*//button
+[**Action]  [Click On] Mini Cart Button
+[**I] addChild_maxBenefitAs_percentOfPrimary.miniCart
+[**VV]  AD&D Child 1000 Mini Cart You Pay //td[contains(text(),'AD&D Child 1000')]/../td[2], miniCart.youPay - //td[contains(text(),'AD&D Child 1000')]/../td[2],$28.16,$28.16,passed
+[**Action]  [Click On] Mini Cart Button
+[**Section] Shopping Cart
+[**Entity] Shopping Cart with Template: addpe
+[**Entity] Shopping Cart with Tier: eo
+[**Entity] Shopping Cart with Plan: AD&D PE 1000
+[**Action] Verifying Shopping Cart Data
+[**Entity] Verifying Shopping Cart Plan: AD&D PE 1000
+[**Action] Verifying Element Is Displayed  Shopping Cart Page Displayed locator: //*[contains(text(), 'Shopping Cart')]
+[**V]   Shopping Cart Page Displayed  //*[contains(text(), 'Shopping Cart')] Expected: [true] Actual: [true] = passed
+[**Action] Verifying Element Is Displayed  Shopping Cart: Plan Card was returned: AD&D PE 1000 locator: undefined
+[**V]   Shopping Cart: Plan Card was returned: AD&D PE 1000   Expected: [true] Actual: [true] = passed
+[**I] addChild_maxBenefitAs_percentOfPrimary.shoppingCart
+[**Action]  [Click On] View Details
+[**Warning] [tier: undefined] [AD&D PE 1000] does not have any detail verifications so none were made
+[**Entity] Shopping Cart with Template: addspouse
+[**Entity] Shopping Cart with Tier: eo
+[**Entity] Shopping Cart with Plan: AD&D Spouse 1000
+[**Action] Verifying Shopping Cart Data
+[**Entity] Verifying Shopping Cart Plan: AD&D Spouse 1000
+[**Action] Verifying Element Is Displayed  Shopping Cart Page Displayed locator: //*[contains(text(), 'Shopping Cart')]
+[**V]   Shopping Cart Page Displayed  //*[contains(text(), 'Shopping Cart')] Expected: [true] Actual: [true] = passed
+[**Action] Verifying Element Is Displayed  Shopping Cart: Plan Card was returned: AD&D Spouse 1000 locator: undefined
+[**V]   Shopping Cart: Plan Card was returned: AD&D Spouse 1000   Expected: [true] Actual: [true] = passed
+[**I] addChild_maxBenefitAs_percentOfPrimary.shoppingCart
+[**Action]  [Click On] View Details
+[**VV]  plan: AD&D Spouse 1000: Shopping Cart You Pay //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[2]/strong, shoppingCart.youPay - //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[2]/strong,$28.16,$28.16,passed
+[**VV]  plan: AD&D Spouse 1000: Shopping Cart Approved Benefit Amount //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'Approved Benefit Amount')]/../../div[2], shoppingCart.approvedBenefitAmount - //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'Approved Benefit Amount')]/../../div[2],25,000.00,$25,000.00,passed
+[**VV]  plan: AD&D Spouse 1000: Shopping Cart Tax //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//span[contains(text(),'Pre-tax')], shoppingCart.tax - //p[contains(text(),'AD&D Spouse 1000')]/../../div[2]//span[contains(text(),'Pre-tax')],Pre-tax,Pre-tax,passed
+[**Warning] [tier: undefined] [AD&D Spouse 1000] does not have any detail verifications so none were made
+[**VV]  plan: AD&D Spouse 1000: Shopping Cart You Pay Total [object Object], shoppingCart.youPayTotal - [object Object],$112.52,You Pay: $112.52 *,passed
+[**Entity] Shopping Cart with Template: addchild
+[**Entity] Shopping Cart with Tier: eo
+[**Entity] Shopping Cart with Plan: AD&D Child 1000
+[**Action] Verifying Shopping Cart Data
+[**Entity] Verifying Shopping Cart Plan: AD&D Child 1000
+[**Action] Verifying Element Is Displayed  Shopping Cart Page Displayed locator: //*[contains(text(), 'Shopping Cart')]
+[**V]   Shopping Cart Page Displayed  //*[contains(text(), 'Shopping Cart')] Expected: [true] Actual: [true] = passed
+[**Action] Verifying Element Is Displayed  Shopping Cart: Plan Card was returned: AD&D Child 1000 locator: undefined
+[**V]   Shopping Cart: Plan Card was returned: AD&D Child 1000   Expected: [true] Actual: [true] = passed
+[**I] addChild_maxBenefitAs_percentOfPrimary.shoppingCart
+[**Action]  [Click On] View Details
+[**VV]  plan: AD&D Child 1000: Shopping Cart You Pay //p[contains(text(),'AD&D Child 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[2]/strong, shoppingCart.youPay - //p[contains(text(),'AD&D Child 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[2]/strong,$28.16,$28.16,passed
+[**VV]  plan: AD&D Child 1000: Shopping Cart Approved Benefit Amount //p[contains(text(),'AD&D Child 1000')]/../../div[2]//*[contains(text(),'Approved Benefit Amount')]/../../div[2], shoppingCart.approvedBenefitAmount - //p[contains(text(),'AD&D Child 1000')]/../../div[2]//*[contains(text(),'Approved Benefit Amount')]/../../div[2],$25,000.00,$25,000.00,passed
+[**VV]  plan: AD&D Child 1000: Shopping Cart Tax //p[contains(text(),'AD&D Child 1000')]/../../div[2]//span[contains(text(),'Pre-tax')], shoppingCart.tax - //p[contains(text(),'AD&D Child 1000')]/../../div[2]//span[contains(text(),'Pre-tax')],Pre-tax,Pre-tax,passed
+[**Warning] [tier: undefined] [AD&D Child 1000] does not have any detail verifications so none were made
+[**VV]  plan: AD&D Child 1000: Shopping Cart You Pay Total [object Object], shoppingCart.youPayTotal - [object Object],$112.52,You Pay: $112.52 *,passed
+[**Section] Confirmation
+[**Action] Click Displayed Complete Enrolment Button on Shopping Cart Page
+[15:23:24] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Complete Enrollment')]) - the first result will be used
+[**Log] Complete Enrolment Button on Shopping Cart Page = true
+[15:23:24] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Complete Enrollment')]) - the first result will be used
+[15:23:24] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Complete Enrollment')]) - the first result will be used
+[15:23:25] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Complete Enrollment')]) - the first result will be used
+[15:23:25] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Complete Enrollment')]) - the first result will be used
+[**Action] Verifying Element Is Displayed Just One More Thing Page locator: //*[contains(text(),'Just One More Thing')]
+[**V]  Just One More Thing Page  //*[contains(text(),'Just One More Thing')] Expected: [true] Actual: [true] = passed
+[**Action]  [Click On] Check the Accept Check Box
+[15:23:30] W/element - more than one element found for locator By(xpath, //input) - the first result will be used
+[15:23:30] W/element - more than one element found for locator By(xpath, //input) - the first result will be used
+[15:23:31] W/element - more than one element found for locator By(xpath, //input) - the first result will be used
+[15:23:31] W/element - more than one element found for locator By(xpath, //input) - the first result will be used
+[**Action]  [Click On] Accept and Continue
+[**I] addChild_maxBenefitAs_percentOfPrimary.[object Object]
+[**Action] Verifying Element Is Displayed Conformation of Benefits Page -> Plan AD&D PE 1000 locator: //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D PE 1000')]
+[**V]  Conformation of Benefits Page -> Plan AD&D PE 1000  //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D PE 1000')] Expected: [true] Actual: [true] = passed
+[**I] addChild_maxBenefitAs_percentOfPrimary.[object Object]
+[**Action] Verifying Element Is Displayed Conformation of Benefits Page -> Plan AD&D Spouse 1000 locator: //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D Spouse 1000')]
+[**V]  Conformation of Benefits Page -> Plan AD&D Spouse 1000  //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D Spouse 1000')] Expected: [true] Actual: [true] = passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Classification /../td[1], confirmationOfBenefits.classification - /../td[1],Accidental Death & Dismemberment- Spouse,Accidental Death & Dismemberment- Spouse,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Total Premium /../td[6], confirmationOfBenefits.totalPremium - /../td[6],$28.16,$28.16,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits You Pay /../td[8], confirmationOfBenefits.youPay - /../td[8],$28.16,$28.16Pre-tax,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Tax /../td[8], confirmationOfBenefits.tax - /../td[8],Pre-tax,$28.16Pre-tax,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Dependents /../td[5], confirmationOfBenefits.undefined - /../td[5],Spouse (Spouse),Spouse (Spouse),passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Approved Benefit Amount /../td[2], confirmationOfBenefits.undefined - /../td[2],$25,000.00,AD&D Spouse 1000Approved Benefit Amount: $25,000.00,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Total Premium Total //td[contains(.,'Totals:')]/../td[6], confirmationOfBenefits.totalPremiumTotal - //td[contains(.,'Totals:')]/../td[6],$112.52,$112.52Per Pay Period,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits Paid Employer Total //td[contains(.,'Totals:')]/../td[7], confirmationOfBenefits.paidEmployerTotal - //td[contains(.,'Totals:')]/../td[7],$0.00,$0.00Per Pay Period,passed
+[**VV]  plan: AD&D Spouse 1000: Confirmation of Benefits You Pay Total //td[contains(.,'Totals:')]/../td[8], confirmationOfBenefits.youPayTotal - //td[contains(.,'Totals:')]/../td[8],$112.52,$112.52 *Per Pay Period,passed
+[**I] addChild_maxBenefitAs_percentOfPrimary.[object Object]
+[**Action] Verifying Element Is Displayed Conformation of Benefits Page -> Plan AD&D Child 1000 locator: //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D Child 1000')]
+[**V]  Conformation of Benefits Page -> Plan AD&D Child 1000  //span[contains(.,'Enrollment Summary')]/../../../../../*//td[contains(.,'AD&D Child 1000')] Expected: [true] Actual: [true] = passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Classification /../td[1], confirmationOfBenefits.classification - /../td[1],Accidental Death & Dismemberment-Children,Accidental Death & Dismemberment-Children,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Total Premium /../td[6], confirmationOfBenefits.totalPremium - /../td[6],$28.16,$28.16,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits You Pay /../td[8], confirmationOfBenefits.youPay - /../td[8],$28.16,$28.16Pre-tax,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Tax /../td[8], confirmationOfBenefits.tax - /../td[8],Pre-tax,$28.16Pre-tax,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Dependents /../td[5], confirmationOfBenefits.undefined - /../td[5],Child (Child),Child (Child),passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Approved Benefit Amount /../td[2], confirmationOfBenefits.undefined - /../td[2],$25,000.00,AD&D Child 1000Approved Benefit Amount: $25,000.00,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Total Premium Total //td[contains(.,'Totals:')]/../td[6], confirmationOfBenefits.totalPremiumTotal - //td[contains(.,'Totals:')]/../td[6],$112.52,$112.52Per Pay Period,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits Paid Employer Total //td[contains(.,'Totals:')]/../td[7], confirmationOfBenefits.paidEmployerTotal - //td[contains(.,'Totals:')]/../td[7],$0.00,$0.00Per Pay Period,passed
+[**VV]  plan: AD&D Child 1000: Confirmation of Benefits You Pay Total //td[contains(.,'Totals:')]/../td[8], confirmationOfBenefits.youPayTotal - //td[contains(.,'Totals:')]/../td[8],$112.52,$112.52 *Per Pay Period,passed
+[**Action]  [Click On] Proceed to Dashboard Button
+[**Action] Verifying Element Is Displayed Dashboard Page locator: //div[contains(text(),'Your Dashboard')]
+[**V]  Dashboard Page  //div[contains(text(),'Your Dashboard')] Expected: [true] Actual: [true] = passed
+[**Action]  [Click On] Click Dashboard Link
+[**Debug] &&&&&& Click on Dashboard Link &&&&
+[**Information] I am going to expand if needed... AD&D PE 1000
+[**Information] ********************** Locator: //p[contains(.,'AD&D PE 1000')]/../../../../../../../div[2]
+false
+Plan is not visible! -> I will expand...
+[**I] addChild_maxBenefitAs_percentOfPrimary.dashboard
+[**Warning] Dashboard Plan AD&D PE 1000 does not have a details section so will not have verifications for the detail view
+[**Warning] Plan does not have a Cost of Selected Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Upcoming Benefit Selections section so verifications will not be performed
+[**Warning] Plan does not have a Current Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Cost of Current Benefits  section so verifications will not be performed
+[**Warning] Plan does not have a Historical Benefit Selections section so verifications will not be performed
+[**Action]  [Click On] Click Dashboard Link
+[**Debug] &&&&&& Click on Dashboard Link &&&&
+[**Information] I am going to expand if needed... AD&D Spouse 1000
+[**Information] ********************** Locator: //p[contains(.,'AD&D Spouse 1000')]/../../../../../../../div[2]
+false
+Plan is not visible! -> I will expand...
+[**I] addChild_maxBenefitAs_percentOfPrimary.dashboard
+[**VV]  plan: AD&D Spouse 1000: Dashboard Approved Benefit Amount Dashboard Locator: {//p[contains(.,'<plan.name>')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2]} //p[contains(.,'AD&D Spouse 1000')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2], dashboard.approvedBenefitAmount - //p[contains(.,'AD&D Spouse 1000')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2],$25,000.00,$25,000.00,passed
+[**VV]  plan: AD&D Spouse 1000: Dashboard Tax Dashboard Locator: {//p[contains(.,'<plan.name>')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[3]/span} //p[contains(.,'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[3]/span, dashboard.tax - //p[contains(.,'AD&D Spouse 1000')]/../../div[2]//*[contains(text(),'The Premium')]/../../div[3]/span,Pre-tax,Pre-tax,passed
+[**Warning] Dashboard Plan AD&D Spouse 1000 does not have a details section so will not have verifications for the detail view
+[**Warning] Plan does not have a Cost of Selected Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Upcoming Benefit Selections section so verifications will not be performed
+[**Warning] Plan does not have a Current Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Cost of Current Benefits  section so verifications will not be performed
+[**Warning] Plan does not have a Historical Benefit Selections section so verifications will not be performed
+[**Action]  [Click On] Click Dashboard Link
+[**Debug] &&&&&& Click on Dashboard Link &&&&
+[**Information] I am going to expand if needed... AD&D Child 1000
+[**Information] ********************** Locator: //p[contains(.,'AD&D Child 1000')]/../../../../../../../div[2]
+false
+Plan is not visible! -> I will expand...
+[**I] addChild_maxBenefitAs_percentOfPrimary.dashboard
+[**VV]  plan: AD&D Child 1000: Dashboard Approved Benefit Amount Dashboard Locator: {//p[contains(.,'<plan.name>')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2]} //p[contains(.,'AD&D Child 1000')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2], dashboard.approvedBenefitAmount - //p[contains(.,'AD&D Child 1000')]/../../div//span[contains(text(),'Approved Benefit Amount')]/../../div[2],$25,000.00,$25,000.00,passed
+[**Warning] Dashboard Plan AD&D Child 1000 does not have a details section so will not have verifications for the detail view
+[**Warning] Plan does not have a Cost of Selected Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Upcoming Benefit Selections section so verifications will not be performed
+[**Warning] Plan does not have a Current Benefits section so verifications will not be performed
+[**Warning] Plan does not have a Cost of Current Benefits  section so verifications will not be performed
+[**Warning] Plan does not have a Historical Benefit Selections section so verifications will not be performed
+[**Action] Setting Ignore Synchronization to true
+[**Action] Request Page: https://core-api.maestroedgy.com/admin/
+[**Action] getting page: https://core-api.maestroedgy.com/admin/
+[**Action] Typing (secret) Enter Login Id
+[**Action] Typing (secret) Enter Password
+[**Action] Clicking Element Login Button
+[**Action] Clicked on Login Button
+[**Action] Checking Visibility Core Administration Landing Page
+[**V] Core Administration Landing Page = true
+[**Action] Setting Ignore Synchronization to true
+[**Information] Templates
+[**Information] Template addpe
+[**Information] Tiers
+[**Information] Tier: eo
+[**Information] Plans
+[**Information] Plan with name: AD&D PE 1000
+[**Section] Coverages
+[**Action] Setting Ignore Synchronization to true
+[**Action] Request Page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=187&status__exact=pending_waiting_for_approval
+[**Action] getting page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=187&status__exact=pending_waiting_for_approval
+[**Action] Clicking Element Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**Action] Clicked on Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**I] addChild_maxBenefitAs_percentOfPrimary.coverages
+[**Information] Template addspouse
+[**Information] Tiers
+[**Information] Tier: eo
+[**Information] Plans
+[**Information] Plan with name: AD&D Spouse 1000
+[**Section] Coverages
+[**Action] Setting Ignore Synchronization to true
+[**Action] Request Page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=188&status__exact=pending_waiting_for_approval
+[**Action] getting page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=188&status__exact=pending_waiting_for_approval
+[**Action] Clicking Element Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**Action] Clicked on Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**I] addChild_maxBenefitAs_percentOfPrimary.coverages
+[**Information] Template addchild
+[**Information] Tiers
+[**Information] Tier: eo
+[**Information] Plans
+[**Information] Plan with name: AD&D Child 1000
+[**Section] Coverages
+[**Action] Setting Ignore Synchronization to true
+[**Action] Request Page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=188&status__exact=pending_waiting_for_approval
+[**Action] getting page: https://core-api.maestroedgy.com/admin/enrollment/coverage/?group__id__exact=523&product_category__id__exact=188&status__exact=pending_waiting_for_approval
+[**Action] Clicking Element Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**Action] Clicked on Core Coverage Record Member Link //td[contains(text(),'bmember semimonth5')]/../th//a
+[**I] addChild_maxBenefitAs_percentOfPrimary.coverages
+[**Action] Setting Ignore Synchronization to true
+[**Section] EDI endpoint verifications
+[**Action] Setting Ignore Synchronization to true
+[**Action] Setting Ignore Synchronization to true
+[**Action] Request Page: https://core-api.maestroedgy.com/api/edi/?group_id=523&user_role=mmccain-alegeus-admin&page_size=50&page=1
+[**Action] getting page: https://core-api.maestroedgy.com/api/edi/?group_id=523&user_role=mmccain-alegeus-admin&page_size=50&page=1
+[**I] addChild_maxBenefitAs_percentOfPrimary.edi
+Group includes 284 records
+**** match ****
+[**VV]  AD&D Child 1000 EDI Rate Id, EDI.rate,8809,8809,passed
+[**VV]  AD&D Child 1000 EDI Employer Sponsored, EDI.employerSponsored,false,false,passed
+[**VV]  AD&D Child 1000 EDI Billed, EDI.billed,3.25252,3.25252,passed
+[**VV]  AD&D Child 1000 EDI Admin, EDI.admin,0.25252,0.25252,passed
+[**VV]  AD&D Child 1000 EDI Coverage Tier, EDI.tier,CHO,CHO,passed
+[**Debug] Actual Records read: 50
+[**Information] ********** Selected Offer: AD&D PE 1000
+[**Information] Provider Id: 41
+[**Information] Division Id: 716
+[**Information] Capture PCP: undefined
+[**Information] Payroll Deduction: 
+[**Information] Classification Id: 689
+[**Information] Tier Name: Employee Only
+[**Information] ME State: enrollment_completed
+[**Information] Cobra: false
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Coverage Type: add_primary
+[**Information] Annual Premium Pretax: 1348.80
+[**Information] Termination Date: 
+[**Information] Disclaimers Acceptance Date: 
+[**Information] User Carrier Id: 
+[**Information] Rate Id: 8880
+[**Information] Face Value: 49900.00
+[**Information] Location Id: 811
+[**Information] Issued Date: 2016-10-01
+[**Information] Issued Age: 28
+[**Information] Category: Accidental Death and Dismemberment
+[**Information] Life Event Status: 
+[**Information] Rate Basis: 1000
+[**Information] Billing Offset: 0
+[**Information] Rate Kind: undefined
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Tentative: false
+[**Information] Pended GI Amount: 
+[**Information] Product Display Name: AD&D PE 1000
+[**Information] IN OOP Max Family: undefined
+[**Information] Benefit Periods: 
+[**Information] Pay Cycle: 24
+[**Information] Cobra Length: 
+[**Information] Product Category: 187
+[**Information] Effective Provider Date: 2016-10-01
+[**Information] Location: B-SM
+[**Information] Provider: Humana - Automation
+[**Information] Effective Date: 2016-10-01
+[**Information] In OOP Max Individual: undefined
+[**Information] Benefit Amount: 49900.00
+[**Information] Member Covered: true
+[**Information] Plan Name: AD&D PE 1000
+[**Information] Plan Provider Id: 1333
+[**Information] Status: pending_waiting_for_approval
+[**Information] Division: B-SM
+[**Information] Classification: B-SM
+[**Information] Premium: 56.20
+[**Information] External Group Id: 
+[**Information] End Date: 2017-09-30
+[**Information] Cobra Eligible: false
+[**Information] HSA Compatible: undefined
+[**Information] Number of Spouses: 1
+[**Information] Billable: true
+[**Information] Units: 49.90
+[**Information] Defined Benefit: False
+[**Information] Employer Sponsored: false
+[**Information] Billed: 3.25252
+[**Information] Late Days: 10
+[**Information] Placeholder: false
+[**Information] Coverage Id: 183898
+[**Information] Source: Online Enrollment
+[**Information] Disclaimers Accepted: false
+[**Information] Age Calc: 12
+[**Information] Out OOP Max Family: undefined
+[**Information] Previous Coverage Id: 
+[**Information] Wellness Contribution: 
+[**Information] Admin: 0.25252
+[**Information] Bill To: Group
+[**Information] Term Days: 60
+[**Information] Number of Dependents: 2
+[**Information] Plan Short Name: AD&D PE 1000
+[**Information] Coverage Tier: EO
+[**Information] Annual Contribution: 0.00
+[**Information] Annual Premium Posttax: 0.00
+[**Information] ********** Selected Offer: AD&D Spouse 1000
+[**Information] Provider Id: 41
+[**Information] Division Id: 716
+[**Information] Capture PCP: undefined
+[**Information] Payroll Deduction: 
+[**Information] Classification Id: 689
+[**Information] Tier Name: Spouse Only
+[**Information] ME State: enrollment_completed
+[**Information] Cobra: false
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Coverage Type: add_spouse
+[**Information] Annual Premium Pretax: 675.72
+[**Information] Termination Date: 
+[**Information] Disclaimers Acceptance Date: 
+[**Information] User Carrier Id: 
+[**Information] Rate Id: 8818
+[**Information] Face Value: 25000.00
+[**Information] Location Id: 811
+[**Information] Issued Date: 2016-10-01
+[**Information] Issued Age: 26
+[**Information] Category: Accidental Death & Dismemberment- Spouse
+[**Information] Life Event Status: 
+[**Information] Rate Basis: 1000
+[**Information] Billing Offset: 0
+[**Information] Rate Kind: undefined
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Tentative: false
+[**Information] Pended GI Amount: 
+[**Information] Product Display Name: AD&D Spouse 1000
+[**Information] IN OOP Max Family: undefined
+[**Information] Benefit Periods: 
+[**Information] Pay Cycle: 24
+[**Information] Cobra Length: 
+[**Information] Product Category: 188
+[**Information] Effective Provider Date: 2016-10-01
+[**Information] Location: B-SM
+[**Information] Provider: Humana - Automation
+[**Information] Effective Date: 2016-10-01
+[**Information] In OOP Max Individual: undefined
+[**Information] Benefit Amount: 25000.00
+[**Information] Member Covered: false
+[**Information] Plan Name: AD&D Spouse 1000
+[**Information] Plan Provider Id: 1357
+[**Information] Status: pending_waiting_for_approval
+[**Information] Division: B-SM
+[**Information] Classification: B-SM
+[**Information] Premium: 28.16
+[**Information] External Group Id: 
+[**Information] End Date: 2017-09-30
+[**Information] Cobra Eligible: false
+[**Information] HSA Compatible: undefined
+[**Information] Number of Spouses: 1
+[**Information] Billable: true
+[**Information] Units: 25.00
+[**Information] Defined Benefit: False
+[**Information] Employer Sponsored: false
+[**Information] Billed: 3.25252
+[**Information] Late Days: 10
+[**Information] Placeholder: false
+[**Information] Coverage Id: 183899
+[**Information] Source: Online Enrollment
+[**Information] Disclaimers Accepted: false
+[**Information] Age Calc: 12
+[**Information] Out OOP Max Family: undefined
+[**Information] Previous Coverage Id: 
+[**Information] Wellness Contribution: 
+[**Information] Admin: 0.25252
+[**Information] Bill To: Group
+[**Information] Term Days: 60
+[**Information] Number of Dependents: 2
+[**Information] Plan Short Name: AD&D Spouse 1000
+[**Information] Coverage Tier: SPO
+[**Information] Annual Contribution: 0.00
+[**Information] Annual Premium Posttax: 0.00
+[**Information] ********** Selected Offer: AD&D Child 1000
+[**Information] Provider Id: 41
+[**Information] Division Id: 716
+[**Information] Capture PCP: undefined
+[**Information] Payroll Deduction: 
+[**Information] Classification Id: 689
+[**Information] Tier Name: Child Only
+[**Information] ME State: enrollment_completed
+[**Information] Cobra: false
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Coverage Type: add_children
+[**Information] Annual Premium Pretax: 675.72
+[**Information] Termination Date: 
+[**Information] Disclaimers Acceptance Date: 
+[**Information] User Carrier Id: 
+[**Information] Rate Id: 8809
+[**Information] Face Value: 25000.00
+[**Information] Location Id: 811
+[**Information] Issued Date: 2016-10-01
+[**Information] Issued Age: 6
+[**Information] Category: Accidental Death & Dismemberment-Children
+[**Information] Life Event Status: 
+[**Information] Rate Basis: 1000
+[**Information] Billing Offset: 0
+[**Information] Rate Kind: undefined
+[**Information] Individual In Network OOP Max: undefined
+[**Information] Tentative: false
+[**Information] Pended GI Amount: 
+[**Information] Product Display Name: AD&D Child 1000
+[**Information] IN OOP Max Family: undefined
+[**Information] Benefit Periods: 
+[**Information] Pay Cycle: 24
+[**Information] Cobra Length: 
+[**Information] Product Category: 189
+[**Information] Effective Provider Date: 2016-10-01
+[**Information] Location: B-SM
+[**Information] Provider: Humana - Automation
+[**Information] Effective Date: 2016-10-01
+[**Information] In OOP Max Individual: undefined
+[**Information] Benefit Amount: 25000.00
+[**Information] Member Covered: false
+[**Information] Plan Name: AD&D Children 1000
+[**Information] Plan Provider Id: 1361
+[**Information] Status: pending_waiting_for_approval
+[**Information] Division: B-SM
+[**Information] Classification: B-SM
+[**Information] Premium: 28.16
+[**Information] External Group Id: 
+[**Information] End Date: 2017-09-30
+[**Information] Cobra Eligible: false
+[**Information] HSA Compatible: undefined
+[**Information] Number of Spouses: 1
+[**Information] Billable: true
+[**Information] Units: 25.00
+[**Information] Defined Benefit: False
+[**Information] Employer Sponsored: false
+[**Information] Billed: 3.25252
+[**Information] Late Days: 10
+[**Information] Placeholder: false
+[**Information] Coverage Id: 183900
+[**Information] Source: Online Enrollment
+[**Information] Disclaimers Accepted: false
+[**Information] Age Calc: 12
+[**Information] Out OOP Max Family: undefined
+[**Information] Previous Coverage Id: 
+[**Information] Wellness Contribution: 
+[**Information] Admin: 0.25252
+[**Information] Bill To: Group
+[**Information] Term Days: 60
+[**Information] Number of Dependents: 2
+[**Information] Plan Short Name: AD&D Child 1000
+[**Information] Coverage Tier: CHO
+[**Information] Annual Contribution: 0.00
+[**Information] Annual Premium Posttax: 0.00
+[32m.[0m
+
+
+1 spec, 0 failures
+Finished in 199.218 seconds
+
+[15:24:59] I/launcher - 0 instance(s) of WebDriver still running
+[15:24:59] I/launcher - chrome #01 passed
